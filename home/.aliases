@@ -95,3 +95,11 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Wrap git with hub if hub is available.
 type -t hub > /dev/null && $(hub alias -s bash)
+
+# Weird grep aliases.
+alias rgrep="grep -rI --exclude=.nfs.*"
+alias cgrep="grep -I -C10 --color"
+alias grep="grep --color"
+
+# Split windows in vim.
+alias vi="vim -O"
