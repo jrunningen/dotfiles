@@ -98,7 +98,7 @@ type hub > /dev/null 2>&1 && $(hub alias -s bash)
 # Weird grep aliases.
 alias rgrep="grep -rI --exclude=.nfs.*"
 alias cgrep="grep -I -C10 --color"
-alias grep="grep --color"
+alias grep="grep -E --color"
 
 # Split windows in vim.
 alias vi="vim -O"
