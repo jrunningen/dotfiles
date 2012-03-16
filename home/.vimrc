@@ -57,6 +57,8 @@ set showmode
 set title
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
+" Use auto-indent.
+set ai
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
