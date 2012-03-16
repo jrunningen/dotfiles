@@ -60,6 +60,8 @@ set title
 set scrolloff=3
 " Use auto-indent.
 set ai
+" Turn on everything with filetypes.
+filetype plugin indent on
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
