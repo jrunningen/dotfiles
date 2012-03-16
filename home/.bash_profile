@@ -21,3 +21,6 @@ complete -W "NSGlobalDomain" defaults
 
 # Use vi shortcuts on the command line.
 set -o vi
+
+# Allow custom programs in ~/bin
+PATH=~/bin:$PATH
