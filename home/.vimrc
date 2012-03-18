@@ -1,3 +1,6 @@
+" Install pathogen
+call pathogen#infect()
+
 " Make vim more useful
 set nocompatible
 " Enhance command-line completion
@@ -72,3 +75,4 @@ function! StripWhitespace ()
 	call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
+
