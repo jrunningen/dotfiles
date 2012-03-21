@@ -51,7 +51,7 @@ set nostartofline
 " Show the cursor position
 set ruler
 " Don’t show the intro message when starting vim
-set shortmess=atI
+set shortmess=atIo
 " Show the current mode
 set showmode
 " Show the filename in the window titlebar
