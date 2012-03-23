@@ -76,3 +76,5 @@ function! StripWhitespace ()
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
+" I use a dark background most of the time.
+set background=dark
