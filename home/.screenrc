@@ -1,0 +1,5 @@
+shell -bash
+defscrollback 3000
+
+hardstatus alwayslastline
+hardstatus string '%-w[%n %t]%+w'
