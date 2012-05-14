@@ -67,6 +67,8 @@ set ai
 filetype plugin indent on
 " Search recursively upward for the ctags file.
 set tags=tags;/
+" Use project-specific .vimrc files.
+set exrc secure
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
