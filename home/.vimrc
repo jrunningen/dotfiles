@@ -1,6 +1,7 @@
+" When the host doesn't have ~/.vim in the runtime path, plugins break.
+set rtp+=$HOME/.vim 
 " Install pathogen
 call pathogen#infect()
-
 " Make vim more useful
 set nocompatible
 " Enhance command-line completion
