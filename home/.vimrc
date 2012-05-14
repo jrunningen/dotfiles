@@ -39,8 +39,8 @@ set shiftwidth=2
 "set list
 " Highlight searches
 set hlsearch
-" Ignore case of searches
-set ignorecase
+" Ignore case of lower-case searches
+set ignorecase smartcase
 " Highlight dynamically as pattern is typed
 set incsearch
 " Always show status line
