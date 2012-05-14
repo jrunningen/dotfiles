@@ -65,6 +65,8 @@ set scrolloff=3
 set ai
 " Turn on everything with filetypes.
 filetype plugin indent on
+" Search recursively upward for the ctags file.
+set tags=tags;/
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
