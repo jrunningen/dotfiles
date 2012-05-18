@@ -80,3 +80,6 @@ noremap <leader>ss :call StripWhitespace ()<CR>
 
 " I use a dark background most of the time.
 set background=dark
+
+" Ignore whatever silly colorscheme the local sysadmin likes.
+color default
