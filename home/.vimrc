@@ -85,3 +85,5 @@ set background=dark
 color default
 " Wrap text at word boundaries.
 set linebreak
+" Backspace behavior that seems natural to me.
+set backspace=indent,start
