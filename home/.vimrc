@@ -83,3 +83,5 @@ set background=dark
 
 " Ignore whatever silly colorscheme the local sysadmin likes.
 color default
+" Wrap text at word boundaries.
+set linebreak
