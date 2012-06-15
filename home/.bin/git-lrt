@@ -1,0 +1,19 @@
+#!/usr/bin/env perl
+
+# Like ls -lrt, but sorted by the last time the file was changed in git.
+
+use strict;
+
+my @files = `ls @ARGV`;
+
+my @list;
+
+foreach (@files) {
+	chomp;
+	my $date = `git log -1 --format='%ci' '$_' 2>/dev/null`;
+	chomp $date;
+
+	push @list, "$date $_\n";
+}
+
+print sort @list;

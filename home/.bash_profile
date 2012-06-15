@@ -22,5 +22,7 @@ complete -W "NSGlobalDomain" defaults
 # Use vi shortcuts on the command line.
 set -o vi
 
-# Allow custom programs in ~/bin
-PATH=~/bin:$PATH
+# Allow custom programs in ~/bin and ~/.bin
+# bin isn't tracked by homesick, so it can be used for local stuff.
+# .bin is tracked.
+PATH=~/bin:~/.bin:$PATH
