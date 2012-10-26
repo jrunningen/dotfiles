@@ -7,9 +7,6 @@ call pathogen#infect()
 " Make vim more useful
 set nocompatible
 
-" Allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-
 " Store lots of :cmdline history
 set history=1000
 
@@ -121,3 +118,8 @@ set linebreak
 
 " Make powerline look nice.
 let g:Powerline_symbols = 'fancy'
+
+" Backspace behavior that seems natural to me.
+set backspace=indent,start
+" Wrap text at 80 characters.
+set textwidth=80
