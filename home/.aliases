@@ -102,3 +102,6 @@ alias grep="grep -E --color"
 
 # Split windows in vim.
 alias vi="vim -O"
+
+# Show my processes.
+alias psme="ps -f -u ${USER} --forest"
