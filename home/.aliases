@@ -105,3 +105,6 @@ alias vi="vim -O"
 
 # Show my processes.
 alias psme="ps -f -u ${USER} --forest"
+
+# It's a common mistake.
+alias jerbs="jobs"
