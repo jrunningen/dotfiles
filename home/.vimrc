@@ -78,11 +78,10 @@ function! StripWhitespace ()
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
-" I use a dark background most of the time.
-set background=dark
-
 " Ignore whatever silly colorscheme the local sysadmin likes.
 color default
+" I use a dark background most of the time.
+set background=dark
 " Wrap text at word boundaries.
 set linebreak
 " Backspace behavior that seems natural to me.
