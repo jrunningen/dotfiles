@@ -102,6 +102,3 @@ alias grep="grep --color"
 
 # Split windows in vim.
 alias vi="vim -O"
-
-# Alias to MacVim
-type mvim >/dev/null && alias vim="mvim -v"
