@@ -22,3 +22,74 @@
 [submodule "home/.vim/bundle/vim-rails"]
 	path = home/.vim/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
+
+# Submodules used by https://github.com/scrooloose/vimfiles
+[submodule "home/.vim/bundle/git-runtime"]
+	path = home/.vim/bundle/git-runtime
+	url = https://github.com/tpope/vim-git.git
+[submodule "home/.vim/bundle/endwise"]
+	path = home/.vim/bundle/endwise
+	url = https://github.com/tpope/vim-endwise.git
+[submodule "home/.vim/bundle/surround"]
+	path = home/.vim/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "home/.vim/bundle/ragtag"]
+	path = home/.vim/bundle/ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+[submodule "home/.vim/bundle/nerdcommenter"]
+	path = home/.vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "home/.vim/bundle/syntastic"]
+	path = home/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "home/.vim/bundle/csapprox"]
+	path = home/.vim/bundle/csapprox
+	url = https://github.com/godlygeek/csapprox.git
+[submodule "home/.vim/bundle/vim-ruby"]
+	path = home/.vim/bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "home/.vim/bundle/bufexplorer"]
+	path = home/.vim/bundle/bufexplorer
+	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "home/.vim/bundle/a"]
+	path = home/.vim/bundle/a
+	url = https://github.com/vim-scripts/a.vim.git
+[submodule "home/.vim/bundle/indexed-search"]
+	path = home/.vim/bundle/indexed-search
+	url = https://github.com/vim-scripts/IndexedSearch.git
+[submodule "home/.vim/bundle/delimitMate"]
+	path = home/.vim/bundle/delimitMate
+	url = https://github.com/vim-scripts/delimitMate.vim.git
+[submodule "home/.vim/bundle/matchit"]
+	path = home/.vim/bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "home/.vim/bundle/markdown-runtime"]
+	path = home/.vim/bundle/markdown-runtime
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "home/.vim/bundle/gundo"]
+	path = home/.vim/bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "home/.vim/bundle/solarized"]
+	path = home/.vim/bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "home/.vim/bundle/command-t"]
+	path = home/.vim/bundle/command-t
+	url = https://github.com/wincent/Command-T.git
+[submodule "home/.vim/bundle/ack"]
+	path = home/.vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "home/.vim/bundle/vim-coffee-script"]
+	path = home/.vim/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "home/.vim/bundle/ultisnips"]
+	path = home/.vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "home/.vim/bundle/tagbar"]
+	path = home/.vim/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar
+[submodule "home/.vim/bundle/MatchTag"]
+	path = home/.vim/bundle/MatchTag
+	url = https://github.com/gregsexton/MatchTag.git
+[submodule "home/.vim/bundle/yankring"]
+	path = home/.vim/bundle/yankring
+	url = https://github.com/vim-scripts/YankRing.vim.git
