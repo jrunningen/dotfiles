@@ -9,3 +9,13 @@ export MANPAGER="less -X -F"
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
+
+# Allow custom programs in ~/bin and ~/.bin
+# bin isn't tracked by homesick, so it can be used for local stuff.
+# .bin is tracked.
+PATH=~/bin:~/.bin:$PATH
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Prefer US English and use UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
