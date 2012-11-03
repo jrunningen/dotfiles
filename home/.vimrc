@@ -1,5 +1,5 @@
 " When the host doesn't have ~/.vim in the runtime path, plugins break.
-set rtp+=$HOME/.vim 
+set rtp+=$HOME/.vim
 
 " Install pathogen
 call pathogen#infect()
@@ -13,8 +13,13 @@ set backspace=indent,eol,start
 " Store lots of :cmdline history
 set history=1000
 
-" Enhance command-line completion
-set wildmenu
+" Display trailing spaces
+set list
+set listchars=tab:\ \ ,trail:⋅
+
+set wildmode=list:longest   " Make cmdline tab completion similar to bash
+set wildmenu                " Enable ctrl-n and ctrl-p to scroll thru matches
+set wildignore=*.o,*.obj,*~ " Stuff to ignore when tab completing
 
 " Allow cursor keys in insert mode
 set esckeys
@@ -22,8 +27,6 @@ set esckeys
 " Optimize for fast terminal connections
 set ttyfast
 
-" Add the g flag to search/replace by default
-" set gdefault
 " Use UTF-8 without BOM
 set encoding=utf-8 nobomb
 
@@ -46,24 +49,21 @@ syntax on
 " Highlight current line
 set cursorline
 
-" Make tabs as wide as two spaces
-set tabstop=2
-set shiftwidth=2
-
-" Highlight searches
-set hlsearch
+set incsearch   " Find the next match as we type the search
+set hlsearch    " Highlight searches by default
 
 " Ignore case of lower-case searches
 set ignorecase smartcase
-
-" Highlight dynamically as pattern is typed
-set incsearch
 
 " Always show status line
 set laststatus=2
 
 " Enable mouse in all modes
 set mouse=a
+set ttymouse=xterm2
+
+"tell the term has 256 colors
+set t_Co=256
 
 " Disable error bells
 set noerrorbells
@@ -83,8 +83,10 @@ set showmode
 " Show the filename in the window titlebar
 set title
 
-" Start scrolling three lines before the horizontal window border
+" Vertical/horizontal scroll off settings
 set scrolloff=3
+set sidescrolloff=7
+set sidescroll=1
 
 " Use auto-indent.
 set ai
