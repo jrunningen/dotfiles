@@ -40,10 +40,10 @@ alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
 
 # Canonical hex dump; some systems have this symlinked
-type hd > /dev/null || alias hd="hexdump -C"
+type hd > /dev/null 2>&1 || alias hd="hexdump -C"
 
 # OS X has no `md5sum`, so use `md5` as a fallback
-type md5sum > /dev/null || alias md5sum="md5"
+type md5sum > /dev/null 2>&1 || alias md5sum="md5"
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
@@ -93,7 +93,7 @@ alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # Wrap git with hub if hub is available.
-type hub > /dev/null && $(hub alias -s bash)
+type hub > /dev/null 2>&1 && $(hub alias -s bash)
 
 # Weird grep aliases.
 alias rgrep="grep -rI --exclude=.nfs.*"
