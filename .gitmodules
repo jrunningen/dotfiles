@@ -42,9 +42,6 @@
 [submodule "home/.vim/bundle/syntastic"]
 	path = home/.vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "home/.vim/bundle/csapprox"]
-	path = home/.vim/bundle/csapprox
-	url = https://github.com/godlygeek/csapprox.git
 [submodule "home/.vim/bundle/vim-ruby"]
 	path = home/.vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
