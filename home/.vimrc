@@ -118,3 +118,6 @@ set background=dark
 
 " Wrap text at word boundaries.
 set linebreak
+
+" Make powerline look nice.
+let g:Powerline_symbols = 'fancy'
