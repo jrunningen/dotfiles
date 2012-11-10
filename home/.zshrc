@@ -38,5 +38,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 set -o vi
 
-source ~/.exports
-source ~/.aliases
+for file in ~/.{extra,exports,aliases,functions,private/*}; do
+	[ -r "$file" ] && source "$file"
+done
+unset file
