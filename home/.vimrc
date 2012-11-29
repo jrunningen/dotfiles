@@ -129,3 +129,6 @@ nnoremap <silent> <F9> :TagbarToggle<CR>
 
 " Open NERDTree.
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
+
+" Magic regexes.
+set magic
