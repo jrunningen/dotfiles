@@ -132,3 +132,9 @@ nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " Magic regexes.
 set magic
+
+" Easier window jumping
+nmap <C-j> <C-w>j
+nmap <C-h> <C-w>h
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
