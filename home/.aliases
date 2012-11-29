@@ -105,3 +105,6 @@ alias psme="ps -f -u ${USER} --forest"
 
 # It's a common mistake.
 alias jerbs="jobs"
+
+# Multithreaded make.
+alias mm="make -j10"
