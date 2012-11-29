@@ -123,3 +123,9 @@ let g:Powerline_symbols = 'fancy'
 set backspace=indent,start
 " Wrap text at 80 characters.
 set textwidth=80
+
+" Open TagBar.
+nnoremap <silent> <F9> :TagbarToggle<CR>
+
+" Open NERDTree.
+nnoremap <silent> <F2> :NERDTreeToggle<CR>
