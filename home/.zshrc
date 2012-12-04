@@ -42,3 +42,6 @@ for file in ~/.{extra,exports,aliases,functions,private/*}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
+
+# Autocorrection bothers me.
+unsetopt correct_all
