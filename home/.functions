@@ -45,3 +45,8 @@ function unidecode() {
 	perl -e "binmode(STDOUT, ':utf8'); print \"$@\""
 	echo # newline
 }
+
+# Get a dump of everything that make is doing.
+function make-debug() {
+	make "$@" -p -n 2>&1 | less
+}
