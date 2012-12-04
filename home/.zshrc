@@ -45,3 +45,6 @@ unset file
 
 # Autocorrection bothers me.
 unsetopt correct_all
+
+# Bash-ish history search.
+bindkey "^R" history-incremental-search-backward
