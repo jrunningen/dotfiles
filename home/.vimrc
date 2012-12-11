@@ -1,106 +1,73 @@
 " When the host doesn't have ~/.vim in the runtime path, plugins break.
 set rtp+=$HOME/.vim
 
-" Disable pathogen plugins when appropriate.
+" Pathogen
 let g:pathogen_disabled = []
 if !has('python') && !has('python3')
 	call add(g:pathogen_disabled, 'ultisnips')
 endif
-
 call pathogen#infect()
 
-" Make vim more useful
-set nocompatible
-
-" Store lots of :cmdline history
-set history=1000
-
-" Display trailing spaces
-set list
-set listchars=tab:\ \ ,trail:⋅
-
-set wildmode=list:longest   " Make cmdline tab completion similar to bash
-set wildmenu                " Enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~ " Stuff to ignore when tab completing
-
-" Allow cursor keys in insert mode
-set esckeys
-
-" Optimize for fast terminal connections
-set ttyfast
-
-" Use UTF-8 without BOM
-set encoding=utf-8 nobomb
-
-" Change mapleader
-let mapleader=","
-
-" Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
+" Temporary files
+set backupdir=~/.vim/backups 
 set directory=~/.vim/swaps
 if exists("&undodir")
 	set undodir=~/.vim/undo
 endif
 
-" Enable line numbers
-set number
-
-" Enable syntax highlighting
+" Coloring
 syntax on
+filetype plugin indent on
+color default
 
-" Highlight current line
-set cursorline
-
-set incsearch   " Find the next match as we type the search
-set hlsearch    " Highlight searches by default
-
-" Ignore case of lower-case searches
-set ignorecase smartcase
-
-" Always show status line
-set laststatus=2
-
-" Enable mouse in all modes
-set mouse=a
+set nocompatible                    " Make vim more useful
+set history=1000                    " Store lots of :cmdline history
+set list listchars=tab:\ \ ,trail:⋅ " Display trailing spaces
+set wildmode=list:longest           " Make cmdline tab completion similar to bash
+set wildmenu                        " Enable ctrl-n and ctrl-p to scroll through matches
+set wildignore=*.o,*.obj,*~         " Stuff to ignore when tab completing
+set esckeys                         " Allow cursor keys in insert mode
+set ttyfast                         " Optimize for fast terminal connections
+set encoding=utf-8 nobomb           " Use UTF-8 without BOM
+set number                          " Enable line numbers
+set cursorline                      " Highlight current line
+set incsearch                       " Find the next match as we type the search
+set hlsearch                        " Highlight searches by default
+set ignorecase smartcase            " Ignore case of lower-case searches
+set laststatus=2                    " Always show status line
+set mouse=a                         " Enable mouse in all modes
 set ttymouse=xterm2
-
-"tell the term has 256 colors
-set t_Co=256
-
-" Disable error bells
-set noerrorbells
-
-" Don’t reset cursor to start of line when moving around.
-set nostartofline
-
-" Show the cursor position
-set ruler
-
-" Don’t show the intro message when starting vim
-set shortmess=atIo
-
-" Show the current mode
-set showmode
-
-" Show the filename in the window titlebar
-set title
-
-" Vertical/horizontal scroll off settings
-set scrolloff=3
+set t_Co=256                        " tell the term has 256 colors
+set noerrorbells                    " Disable error bells
+set nostartofline                   " Don’t reset cursor to start of line when moving around.
+set ruler                           " Show the cursor position
+set shortmess=atIo                  " Don’t show the intro message when starting vim
+set showmode                        " Show the current mode
+set title                           " Show the filename in the window titlebar
+set scrolloff=3                     " Vertical/horizontal scroll off settings
 set sidescrolloff=7
 set sidescroll=1
+set ai                              " Use auto-indent.
+set tags=tags;/                     " Search recursively upward for the ctags file.
+set exrc secure                     " Use project-specific .vimrc files.
+set background=dark                 " I use a dark background most of the time.
+set linebreak                       " Wrap text at word boundaries.
+set backspace=indent,start          " Backspace behavior that seems natural to me.
+set textwidth=80                    " Wrap text at 80 characters.
+set magic                           " Fewer backslashes in my regexes.
 
-" Use auto-indent.
-set ai
+let g:Powerline_symbols = 'fancy' " Make powerline look nice.
 
-" Turn on everything with filetypes.
-filetype plugin indent on
+nnoremap <silent> <F9> :TagbarToggle<CR>
+nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
-" Search recursively upward for the ctags file.
-set tags=tags;/
+" Easier window jumping
+nmap <C-j> <C-w>j
+nmap <C-h> <C-w>h
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
-" Use project-specific .vimrc files.
-set exrc secure
+let mapleader=","
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
@@ -111,35 +78,3 @@ function! StripWhitespace ()
 	call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
-
-" Ignore whatever silly colorscheme the local sysadmin likes.
-color default
-
-" I use a dark background most of the time.
-set background=dark
-
-" Wrap text at word boundaries.
-set linebreak
-
-" Make powerline look nice.
-let g:Powerline_symbols = 'fancy'
-
-" Backspace behavior that seems natural to me.
-set backspace=indent,start
-" Wrap text at 80 characters.
-set textwidth=80
-
-" Open TagBar.
-nnoremap <silent> <F9> :TagbarToggle<CR>
-
-" Open NERDTree.
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
-
-" Magic regexes.
-set magic
-
-" Easier window jumping
-nmap <C-j> <C-w>j
-nmap <C-h> <C-w>h
-nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l
