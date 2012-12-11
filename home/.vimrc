@@ -1,7 +1,12 @@
 " When the host doesn't have ~/.vim in the runtime path, plugins break.
 set rtp+=$HOME/.vim
 
-" Install pathogen
+" Disable pathogen plugins when appropriate.
+let g:pathogen_disabled = []
+if !has('python') && !has('python3')
+	call add(g:pathogen_disabled, 'ultisnips')
+endif
+
 call pathogen#infect()
 
 " Make vim more useful
