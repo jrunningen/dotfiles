@@ -6,6 +6,9 @@ let g:pathogen_disabled = []
 if !has('python') && !has('python3')
 	call add(g:pathogen_disabled, 'ultisnips')
 endif
+if !has("gui") " CSApprox turns vim white when running in the terminal.  Don't know why.
+    let g:CSApprox_loaded = 1
+endif
 call pathogen#infect()
 
 " Temporary files
