@@ -12,7 +12,7 @@ endif
 call pathogen#infect()
 
 " Temporary files
-set backupdir=~/.vim/backups 
+set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 if exists("&undodir")
 	set undodir=~/.vim/undo
@@ -61,8 +61,12 @@ set magic                           " Fewer backslashes in my regexes.
 
 let g:Powerline_symbols = 'fancy' " Make powerline look nice.
 
+nnoremap <silent> <f1> :BufExplorer<cr>
 nnoremap <silent> <F9> :TagbarToggle<CR>
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
+
+"make Y consistent with C and D
+nnoremap Y y$
 
 " Easier window jumping
 nmap <C-j> <C-w>j
