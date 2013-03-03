@@ -6,9 +6,17 @@ let g:pathogen_disabled = []
 if !has('python') && !has('python3')
 	call add(g:pathogen_disabled, 'ultisnips')
 endif
-if !has("gui") " CSApprox turns vim white when running in the terminal.  Don't know why.
+
+" CSApprox turns vim white when running in the terminal.  Don't know why.
+if !has("gui") 
     let g:CSApprox_loaded = 1
 endif
+
+" Vim versions lower than 7.0.167 have a bug that prevents this version of Tagbar from working.
+if v:version < 700 || v:version == 700 && !has("patch167")
+    let g:loaded_tagbar = 1
+endif
+
 call pathogen#infect()
 
 " Temporary files

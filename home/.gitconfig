@@ -37,6 +37,7 @@
 	df = diff -w
 	bl = blame -w
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
 	edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u; }; vim `f`"
 	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u; }; git add `f`"
 [push]
