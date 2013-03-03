@@ -102,3 +102,6 @@
 [submodule "home/.powerline-bash"]
 	path = home/.powerline-bash
 	url = git://github.com/milkbikis/powerline-bash.git
+[submodule "home/.vim/bundle/sleuth"]
+	path = home/.vim/bundle/sleuth
+	url = git@github.com:tpope/vim-sleuth.git
