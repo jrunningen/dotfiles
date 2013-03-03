@@ -14,7 +14,8 @@ export HISTCONTROL=ignoredups
 # bin isn't tracked by homesick, so it can be used for local stuff.
 # .bin is tracked.
 PATH=~/bin:~/.bin:$PATH
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin
+PATH=$PATH:$HOME/.cabal/bin
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
