@@ -40,7 +40,7 @@ set ignorecase smartcase            " Ignore case of lower-case searches
 set laststatus=2                    " Always show status line
 set mouse=a                         " Enable mouse in all modes
 set ttymouse=xterm2
-set t_Co=256                        " tell the term has 256 colors
+set t_Co=256                        " Tell the term has 256 colors
 set noerrorbells                    " Disable error bells
 set nostartofline                   " Don’t reset cursor to start of line when moving around.
 set ruler                           " Show the cursor position
@@ -62,7 +62,7 @@ set shiftround
 
 let g:Powerline_symbols = 'fancy' " Make powerline look nice.
 
-nnoremap <silent> <f1> :BufExplorer<cr>
+nnoremap <silent> <F1>  :BufExplorer<CR>
 nnoremap <silent> <F9> :TagbarToggle<CR>
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
