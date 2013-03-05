@@ -63,8 +63,9 @@ set shiftround
 let g:Powerline_symbols = 'fancy' " Make powerline look nice.
 
 nnoremap <silent> <F1>  :BufExplorer<CR>
-nnoremap <silent> <F9> :TagbarToggle<CR>
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
+nnoremap <silent> <F2>  :NERDTreeToggle<CR>
+nnoremap <silent> <F9>  :TagbarToggle<CR>
+nnoremap <silent> <F11> :YRShow<CR>
 
 "make Y consistent with C and D
 nnoremap Y y$
