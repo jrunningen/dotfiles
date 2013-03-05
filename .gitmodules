@@ -99,6 +99,6 @@
 [submodule "home/.vim/bundle/vim-indent-guides"]
 	path = home/.vim/bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "home/.powerline-bash"]
-	path = home/.powerline-bash
-	url = git://github.com/milkbikis/powerline-bash.git
+[submodule "home/.powerline-shell"]
+	path = home/.powerline-shell
+	url = git://github.com/milkbikis/powerline-shell.git
