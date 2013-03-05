@@ -91,3 +91,9 @@ noremap <leader>ss :call StripWhitespace ()<CR>
 augroup filetype
   au! BufRead,BufNewFile *.proto setfiletype proto
 augroup end
+
+" Don't let UltiSnips steal the keybinding for digraph inputs.
+augroup VimStartup
+	au!
+	au VimEnter * sil! iunmap <C-K>
+augroup end
