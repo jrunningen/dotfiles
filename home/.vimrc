@@ -58,6 +58,7 @@ set linebreak                       " Wrap text at word boundaries.
 set backspace=indent,start          " Backspace behavior that seems natural to me.
 set textwidth=80                    " Wrap text at 80 characters.
 set magic                           " Fewer backslashes in my regexes.
+set shiftround
 
 let g:Powerline_symbols = 'fancy' " Make powerline look nice.
 
