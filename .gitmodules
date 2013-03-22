@@ -102,3 +102,6 @@
 [submodule "home/.powerline-shell"]
 	path = home/.powerline-shell
 	url = git://github.com/milkbikis/powerline-shell.git
+[submodule "home/.vim/bundle/obsession"]
+	path = home/.vim/bundle/obsession
+	url = git://github.com/tpope/vim-obsession.git
