@@ -48,7 +48,7 @@ set ignorecase smartcase            " Ignore case of lower-case searches
 set laststatus=2                    " Always show status line
 set mouse=a                         " Enable mouse in all modes
 set ttymouse=xterm2
-set t_Co=256                        " tell the term has 256 colors
+set t_Co=256                        " Tell the term has 256 colors
 set noerrorbells                    " Disable error bells
 set nostartofline                   " Don’t reset cursor to start of line when moving around.
 set ruler                           " Show the cursor position
@@ -66,12 +66,14 @@ set linebreak                       " Wrap text at word boundaries.
 set backspace=indent,start          " Backspace behavior that seems natural to me.
 set textwidth=80                    " Wrap text at 80 characters.
 set magic                           " Fewer backslashes in my regexes.
+set shiftround
 
 let g:Powerline_symbols = 'fancy' " Make powerline look nice.
 
-nnoremap <silent> <f1> :BufExplorer<cr>
-nnoremap <silent> <F9> :TagbarToggle<CR>
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
+nnoremap <silent> <F1>  :BufExplorer<CR>
+nnoremap <silent> <F2>  :NERDTreeToggle<CR>
+nnoremap <silent> <F9>  :TagbarToggle<CR>
+nnoremap <silent> <F11> :YRShow<CR>
 
 "make Y consistent with C and D
 nnoremap Y y$
@@ -93,3 +95,14 @@ function! StripWhitespace ()
 	call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
+
+" Syntax highlighting for Protocol Buffers
+augroup filetype
+  au! BufRead,BufNewFile *.proto setfiletype proto
+augroup end
+
+" Don't let UltiSnips steal the keybinding for digraph inputs.
+augroup VimStartup
+	au!
+	au VimEnter * sil! iunmap <C-K>
+augroup end
