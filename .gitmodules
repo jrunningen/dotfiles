@@ -22,6 +22,24 @@
 [submodule "home/.vim/bundle/vim-rails"]
 	path = home/.vim/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
+[submodule "home/.oh-my-zsh"]
+	path = home/.oh-my-zsh
+	url = git://github.com/robbyrussell/oh-my-zsh.git
+[submodule "home/.vim/bundle/powerline"]
+	path = home/.vim/bundle/powerline
+	url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "home/.vim/bundle/vim-indent-guides"]
+	path = home/.vim/bundle/vim-indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "home/.vim/bundle/sleuth"]
+	path = home/.vim/bundle/sleuth
+	url = git@github.com:tpope/vim-sleuth.git
+[submodule "home/.vim/bundle/obsession"]
+	path = home/.vim/bundle/obsession
+	url = git://github.com/tpope/vim-obsession.git
+[submodule "home/.powerline-shell"]
+	path = home/.powerline-shell
+	url = git://github.com/milkbikis/powerline-shell.git
 
 # Submodules used by https://github.com/scrooloose/vimfiles
 [submodule "home/.vim/bundle/git-runtime"]
@@ -90,18 +108,4 @@
 [submodule "home/.vim/bundle/yankring"]
 	path = home/.vim/bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
-[submodule "home/.oh-my-zsh"]
-	path = home/.oh-my-zsh
-	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule "home/.vim/bundle/powerline"]
-	path = home/.vim/bundle/powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule "home/.vim/bundle/vim-indent-guides"]
-	path = home/.vim/bundle/vim-indent-guides
-	url = git://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "home/.vim/bundle/sleuth"]
-	path = home/.vim/bundle/sleuth
-	url = git@github.com:tpope/vim-sleuth.git
-[submodule "home/.vim/bundle/obsession"]
-	path = home/.vim/bundle/obsession
-	url = git://github.com/tpope/vim-obsession.git
+
