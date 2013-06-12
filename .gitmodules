@@ -33,7 +33,7 @@
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "home/.vim/bundle/sleuth"]
 	path = home/.vim/bundle/sleuth
-	url = git@github.com:tpope/vim-sleuth.git
+	url = git://github.com/tpope/vim-sleuth.git
 [submodule "home/.vim/bundle/obsession"]
 	path = home/.vim/bundle/obsession
 	url = git://github.com/tpope/vim-obsession.git
