@@ -40,7 +40,6 @@ set wildignore=*.o,*.obj,*~         " Stuff to ignore when tab completing
 set esckeys                         " Allow cursor keys in insert mode
 set ttyfast                         " Optimize for fast terminal connections
 set encoding=utf-8 nobomb           " Use UTF-8 without BOM
-set number                          " Enable line numbers
 set cursorline                      " Highlight current line
 set incsearch                       " Find the next match as we type the search
 set hlsearch                        " Highlight searches by default
