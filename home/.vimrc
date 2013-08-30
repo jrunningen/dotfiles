@@ -85,6 +85,10 @@ nmap <C-l> <C-w>l
 
 let mapleader=","
 
+" Open the quickfix window at full screen width, even when Tagbar is open
+nnoremap <leader>q :botright cwindow<CR>
+nnoremap <leader>Q :cclose<CR>
+
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
 	let save_cursor = getpos(".")
