@@ -110,3 +110,6 @@ augroup end
 
 nnoremap <leader>gw :Ggrep <cword><CR>
 nnoremap <leader>ww :Ack <cword><CR>
+
+vnoremap <leader>dp :diffput<CR> \| :diffupdate<CR>
+vnoremap <leader>do :diffget<CR> \| :diffupdate<CR>
