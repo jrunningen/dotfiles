@@ -27,7 +27,6 @@ if exists("&undodir")
 endif
 
 " Coloring
-syntax on
 filetype plugin indent on
 color default
 
@@ -57,7 +56,6 @@ set title                           " Show the filename in the window titlebar
 set scrolloff=3                     " Vertical/horizontal scroll off settings
 set sidescrolloff=7
 set sidescroll=1
-set ai                              " Use auto-indent.
 set tags=tags;/                     " Search recursively upward for the ctags file.
 set exrc secure                     " Use project-specific .vimrc files.
 set background=dark                 " I use a dark background most of the time.
