@@ -105,6 +105,9 @@ alias vi="vim -O"
 # Show my processes.
 alias psme="ps -f -u ${USER} --forest"
 
+# Pid of my process.
+alias my="pgrep -n -u ${USER}"
+
 # It's a common mistake.
 alias jerbs="jobs"
 
