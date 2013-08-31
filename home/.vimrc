@@ -107,3 +107,6 @@ augroup VimStartup
 	au!
 	au VimEnter * sil! iunmap <C-K>
 augroup end
+
+nnoremap <leader>gw :Ggrep <cword><CR>
+nnoremap <leader>ww :Ack <cword><CR>
