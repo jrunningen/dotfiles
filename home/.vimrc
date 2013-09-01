@@ -112,6 +112,11 @@ augroup end
 " From http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
 " Delete fugitive buffers when we leave them - otherwise the buffer list gets poluted.
 autocmd BufReadPost fugitive://* set bufhidden=delete
+" View the parent tree with ..
+autocmd BufReadPost fugitive://*
+  \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
+  \   nnoremap <buffer> .. :edit %:h<CR> |
+  \ endif
 
 nnoremap <leader>gw :Ggrep <cword><CR>
 nnoremap <leader>ww :Ack <cword><CR>
