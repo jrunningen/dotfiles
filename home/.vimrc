@@ -28,6 +28,7 @@ endif
 
 " Coloring
 filetype plugin indent on
+syntax on
 color default
 
 set nocompatible                    " Make vim more useful
