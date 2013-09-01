@@ -109,3 +109,6 @@
 	path = home/.vim/bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
 
+[submodule "home/.vim/bundle/largefile"]
+	path = home/.vim/bundle/largefile
+	url = git://github.com/vim-scripts/LargeFile.git
