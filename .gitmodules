@@ -112,3 +112,6 @@
 [submodule "home/.vim/bundle/largefile"]
 	path = home/.vim/bundle/largefile
 	url = git://github.com/vim-scripts/LargeFile.git
+[submodule "home/.vim/bundle/abolish"]
+	path = home/.vim/bundle/abolish
+	url = https://github.com/tpope/vim-abolish.git
