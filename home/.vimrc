@@ -123,3 +123,5 @@ nnoremap <leader>ww :Ack <cword><CR>
 
 vnoremap <leader>dp :diffput<CR> \| :diffupdate<CR>
 vnoremap <leader>do :diffget<CR> \| :diffupdate<CR>
+
+nnoremap <leader>e :Errors<CR>
