@@ -13,7 +13,7 @@ export HISTCONTROL=ignoredups
 # Allow custom programs in ~/bin and ~/.bin
 # bin isn't tracked by homesick, so it can be used for local stuff.
 # .bin is tracked.
-PATH=~/bin:~/.bin:$PATH
+PATH=~/bin:~/.bin:~/.local/bin:$PATH
 PATH=$PATH:$HOME/.rvm/bin
 PATH=$PATH:$HOME/.cabal/bin
 
