@@ -118,6 +118,9 @@ autocmd BufReadPost fugitive://*
   \   nnoremap <buffer> .. :edit %:h<CR> |
   \ endif
 
+" Enable spellcheck for git commit messages
+au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
+
 nnoremap <leader>gw :Ggrep <cword><CR>
 nnoremap <leader>ww :Ack <cword><CR>
 
