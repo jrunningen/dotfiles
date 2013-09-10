@@ -66,7 +66,7 @@ set textwidth=80                    " Wrap text at 80 characters.
 set magic                           " Fewer backslashes in my regexes.
 set shiftround
 
-let g:Powerline_symbols = 'fancy' " Make powerline look nice.
+let g:airline_powerline_fonts = 1
 
 nnoremap <silent> <F1>  :BufExplorer<CR>
 nnoremap <silent> <F2>  :NERDTreeToggle<CR>
@@ -126,3 +126,7 @@ nnoremap <leader>ww :Ack <cword><CR>
 
 vnoremap <leader>dp :diffput<CR> \| :diffupdate<CR>
 vnoremap <leader>do :diffget<CR> \| :diffupdate<CR>
+
+nnoremap <leader>e :Errors<CR>
+
+nnoremap <leader>gt :NERDTreeFind<CR>

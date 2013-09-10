@@ -25,9 +25,6 @@
 [submodule "home/.oh-my-zsh"]
 	path = home/.oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule "home/.vim/bundle/powerline"]
-	path = home/.vim/bundle/powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "home/.vim/bundle/vim-indent-guides"]
 	path = home/.vim/bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
@@ -37,9 +34,6 @@
 [submodule "home/.vim/bundle/obsession"]
 	path = home/.vim/bundle/obsession
 	url = git://github.com/tpope/vim-obsession.git
-[submodule "home/.powerline-shell"]
-	path = home/.powerline-shell
-	url = git://github.com/milkbikis/powerline-shell.git
 
 # Submodules used by https://github.com/scrooloose/vimfiles
 [submodule "home/.vim/bundle/git-runtime"]
@@ -112,3 +106,9 @@
 [submodule "home/.vim/bundle/largefile"]
 	path = home/.vim/bundle/largefile
 	url = git://github.com/vim-scripts/LargeFile.git
+[submodule "home/.vim/bundle/abolish"]
+	path = home/.vim/bundle/abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule "home/.vim/bundle/airline"]
+	path = home/.vim/bundle/airline
+	url = https://github.com/bling/vim-airline.git
