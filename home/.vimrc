@@ -125,3 +125,5 @@ vnoremap <leader>dp :diffput<CR> \| :diffupdate<CR>
 vnoremap <leader>do :diffget<CR> \| :diffupdate<CR>
 
 nnoremap <leader>e :Errors<CR>
+
+nnoremap <leader>gt :NERDTreeFind<CR>
