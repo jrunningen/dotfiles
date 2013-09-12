@@ -118,9 +118,15 @@ autocmd BufReadPost fugitive://*
   \   nnoremap <buffer> .. :edit %:h<CR> |
   \ endif
 
-nnoremap <leader>gw :Ggrep <cword><CR>
+nnoremap <leader>gg :Ggrep <cword><CR>
 nnoremap <leader>ww :Ack <cword><CR>
 
+" Fugitive bindings
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>gc :Gcommit<CR>
+
+" Automatic updates when editing vimdiffs
 vnoremap <leader>dp :diffput<CR> \| :diffupdate<CR>
 vnoremap <leader>do :diffget<CR> \| :diffupdate<CR>
 
