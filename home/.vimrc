@@ -125,6 +125,7 @@ nnoremap <leader>ww :Ack <cword><CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gw :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gb :Gblame<CR>
 
 " Automatic updates when editing vimdiffs
 vnoremap <leader>dp :diffput<CR> \| :diffupdate<CR>
