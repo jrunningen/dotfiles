@@ -66,7 +66,8 @@ set textwidth=80                    " Wrap text at 80 characters.
 set magic                           " Fewer backslashes in my regexes.
 set shiftround
 
-let g:airline_powerline_fonts = 1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 nnoremap <silent> <F1>  :BufExplorer<CR>
 nnoremap <silent> <F2>  :NERDTreeToggle<CR>
@@ -117,6 +118,9 @@ autocmd BufReadPost fugitive://*
   \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
   \   nnoremap <buffer> .. :edit %:h<CR> |
   \ endif
+
+" Enable spellcheck for git commit messages
+au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
 
 nnoremap <leader>gg :Ggrep <cword><CR>
 nnoremap <leader>ww :Ack <cword><CR>
