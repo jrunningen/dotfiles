@@ -29,7 +29,7 @@ endif
 " Coloring
 filetype plugin indent on
 syntax on
-color default
+color jellybeans
 
 set nocompatible                    " Make vim more useful
 set history=1000                    " Store lots of :cmdline history
