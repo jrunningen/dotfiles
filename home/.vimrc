@@ -4,17 +4,17 @@ set rtp+=$HOME/.vim
 " Pathogen
 let g:pathogen_disabled = []
 if !has('python') && !has('python3')
-	call add(g:pathogen_disabled, 'ultisnips')
+  call add(g:pathogen_disabled, 'ultisnips')
 endif
 
 " CSApprox turns vim white when running in the terminal.  Don't know why.
-if !has("gui") 
-    let g:CSApprox_loaded = 1
+if !has("gui")
+  let g:CSApprox_loaded = 1
 endif
 
 " Vim versions lower than 7.0.167 have a bug that prevents this version of Tagbar from working.
 if v:version < 700 || v:version == 700 && !has("patch167")
-    let g:loaded_tagbar = 1
+  let g:loaded_tagbar = 1
 endif
 
 call pathogen#infect()
@@ -23,7 +23,7 @@ call pathogen#infect()
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 if exists("&undodir")
-	set undodir=~/.vim/undo
+  set undodir=~/.vim/undo
 endif
 
 " Coloring
@@ -93,11 +93,11 @@ nnoremap <leader>Q :cclose<CR>
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace ()
-	let save_cursor = getpos(".")
-	let old_query = getreg('/')
-	:%s/\s\+$//e
-	call setpos('.', save_cursor)
-	call setreg('/', old_query)
+  let save_cursor = getpos(".")
+  let old_query = getreg('/')
+  :%s/\s\+$//e
+  call setpos('.', save_cursor)
+  call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace ()<CR>
 
@@ -108,8 +108,8 @@ augroup end
 
 " Don't let UltiSnips steal the keybinding for digraph inputs.
 augroup VimStartup
-	au!
-	au VimEnter * sil! iunmap <C-K>
+  au!
+  au VimEnter * sil! iunmap <C-K>
 augroup end
 
 " From http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
@@ -117,9 +117,9 @@ augroup end
 autocmd BufReadPost fugitive://* set bufhidden=delete
 " View the parent tree with ..
 autocmd BufReadPost fugitive://*
-  \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
-  \   nnoremap <buffer> .. :edit %:h<CR> |
-  \ endif
+      \ if fugitive#buffer().type() =~# '^\%(tree\|blob\)$' |
+      \   nnoremap <buffer> .. :edit %:h<CR> |
+      \ endif
 
 " Enable spellcheck for git commit messages
 au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
