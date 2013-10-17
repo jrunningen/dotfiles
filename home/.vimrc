@@ -7,6 +7,13 @@ if !has('python') && !has('python3')
   call add(g:pathogen_disabled, 'ultisnips')
 endif
 
+" Ultisnips doesn't work for Vim Python < 2.6
+python << endpython
+import vim, sys
+if sys.version_info < (2, 6):
+  vim.command("call add(g:pathogen_disabled, 'ultisnips')")
+endpython
+
 " CSApprox turns vim white when running in the terminal.  Don't know why.
 if !has("gui")
   let g:CSApprox_loaded = 1
