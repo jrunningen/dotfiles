@@ -14,11 +14,6 @@ if sys.version_info < (2, 6):
   vim.command("call add(g:pathogen_disabled, 'ultisnips')")
 endpython
 
-" CSApprox turns vim white when running in the terminal.  Don't know why.
-if !has("gui")
-  let g:CSApprox_loaded = 1
-endif
-
 " Vim versions lower than 7.0.167 have a bug that prevents this version of Tagbar from working.
 if v:version < 700 || v:version == 700 && !has("patch167")
   let g:loaded_tagbar = 1
