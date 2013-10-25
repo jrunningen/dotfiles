@@ -2,7 +2,7 @@ filetype plugin indent on
 syntax on
 color jellybeans
 
-" The Jellybeans colorscheme uses a different background to with SpecialKey.
+" The Jellybeans colorscheme uses a different background with SpecialKey.
 " With my listchar settings, this produces highlighted tabs, which looks weird.
 " So clear the SpecialKey setting.
 autocmd BufEnter * :highlight clear SpecialKey
