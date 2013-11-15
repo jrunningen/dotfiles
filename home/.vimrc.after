@@ -44,3 +44,5 @@ autocmd BufReadPost fugitive://*
 
 " Enable spellcheck for git commit messages
 au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
+
+color molokai

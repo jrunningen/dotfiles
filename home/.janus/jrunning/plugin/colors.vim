@@ -1,5 +1,4 @@
 syntax on
-color jellybeans
 
 " The Jellybeans colorscheme uses a different background with SpecialKey.
 " With my listchar settings, this produces highlighted tabs, which looks weird.
