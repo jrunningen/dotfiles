@@ -13,8 +13,6 @@ if v:version < 700 || v:version == 700 && !has("patch167")
   let g:loaded_tagbar = 1
 endif
 
-call pathogen#infect()
-
 " Temporary files
 set backupdir=~/.vimtmp/backups
 set directory=~/.vimtmp/swaps
