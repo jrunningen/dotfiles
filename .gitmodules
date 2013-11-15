@@ -1,120 +1,120 @@
 [submodule "home/.vim/bundle/vim-fugitive"]
-	path = home/.vim/bundle/vim-fugitive
+	path = home/.janus/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
 [submodule "home/.vim/bundle/nerdtree"]
-	path = home/.vim/bundle/nerdtree
+	path = home/.janus/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
 [submodule "home/.vim/bundle/tabular"]
-	path = home/.vim/bundle/tabular
+	path = home/.janus/tabular
 	url = git://github.com/godlygeek/tabular.git
 [submodule "home/.vim/bundle/vim-commentary"]
-	path = home/.vim/bundle/vim-commentary
+	path = home/.janus/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
 [submodule "home/.vim/bundle/vim-repeat"]
-	path = home/.vim/bundle/vim-repeat
+	path = home/.janus/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
 [submodule "home/.vim/bundle/vim-unimpaired"]
-	path = home/.vim/bundle/vim-unimpaired
+	path = home/.janus/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
 [submodule "home/.vim/bundle/vim-eunuch"]
-	path = home/.vim/bundle/vim-eunuch
+	path = home/.janus/vim-eunuch
 	url = git://github.com/tpope/vim-eunuch.git
 [submodule "home/.vim/bundle/vim-rails"]
-	path = home/.vim/bundle/vim-rails
+	path = home/.janus/vim-rails
 	url = git://github.com/tpope/vim-rails.git
 [submodule "home/.oh-my-zsh"]
 	path = home/.oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
 [submodule "home/.vim/bundle/vim-indent-guides"]
-	path = home/.vim/bundle/vim-indent-guides
+	path = home/.janus/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "home/.vim/bundle/obsession"]
-	path = home/.vim/bundle/obsession
+	path = home/.janus/obsession
 	url = git://github.com/tpope/vim-obsession.git
 
 # Submodules used by https://github.com/scrooloose/vimfiles
 [submodule "home/.vim/bundle/git-runtime"]
-	path = home/.vim/bundle/git-runtime
+	path = home/.janus/git-runtime
 	url = https://github.com/tpope/vim-git.git
 [submodule "home/.vim/bundle/endwise"]
-	path = home/.vim/bundle/endwise
+	path = home/.janus/endwise
 	url = https://github.com/tpope/vim-endwise.git
 [submodule "home/.vim/bundle/surround"]
-	path = home/.vim/bundle/surround
+	path = home/.janus/surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "home/.vim/bundle/ragtag"]
-	path = home/.vim/bundle/ragtag
+	path = home/.janus/ragtag
 	url = https://github.com/tpope/vim-ragtag.git
 [submodule "home/.vim/bundle/nerdcommenter"]
-	path = home/.vim/bundle/nerdcommenter
+	path = home/.janus/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "home/.vim/bundle/syntastic"]
-	path = home/.vim/bundle/syntastic
+	path = home/.janus/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 [submodule "home/.vim/bundle/vim-ruby"]
-	path = home/.vim/bundle/vim-ruby
+	path = home/.janus/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "home/.vim/bundle/bufexplorer"]
-	path = home/.vim/bundle/bufexplorer
+	path = home/.janus/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
 [submodule "home/.vim/bundle/a"]
-	path = home/.vim/bundle/a
+	path = home/.janus/a
 	url = https://github.com/vim-scripts/a.vim.git
 [submodule "home/.vim/bundle/indexed-search"]
-	path = home/.vim/bundle/indexed-search
+	path = home/.janus/indexed-search
 	url = https://github.com/vim-scripts/IndexedSearch.git
 [submodule "home/.vim/bundle/delimitMate"]
-	path = home/.vim/bundle/delimitMate
+	path = home/.janus/delimitMate
 	url = https://github.com/vim-scripts/delimitMate.vim.git
 [submodule "home/.vim/bundle/matchit"]
-	path = home/.vim/bundle/matchit
+	path = home/.janus/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
 [submodule "home/.vim/bundle/markdown-runtime"]
-	path = home/.vim/bundle/markdown-runtime
+	path = home/.janus/markdown-runtime
 	url = https://github.com/tpope/vim-markdown.git
 [submodule "home/.vim/bundle/gundo"]
-	path = home/.vim/bundle/gundo
+	path = home/.janus/gundo
 	url = https://github.com/sjl/gundo.vim.git
 [submodule "home/.vim/bundle/solarized"]
-	path = home/.vim/bundle/solarized
+	path = home/.janus/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "home/.vim/bundle/command-t"]
-	path = home/.vim/bundle/command-t
+	path = home/.janus/command-t
 	url = https://github.com/wincent/Command-T.git
 [submodule "home/.vim/bundle/ack"]
-	path = home/.vim/bundle/ack
+	path = home/.janus/ack
 	url = https://github.com/mileszs/ack.vim.git
 [submodule "home/.vim/bundle/vim-coffee-script"]
-	path = home/.vim/bundle/vim-coffee-script
+	path = home/.janus/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "home/.vim/bundle/ultisnips"]
-	path = home/.vim/bundle/ultisnips
+	path = home/.janus/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 [submodule "home/.vim/bundle/tagbar"]
-	path = home/.vim/bundle/tagbar
+	path = home/.janus/tagbar
 	url = git://github.com/majutsushi/tagbar
 [submodule "home/.vim/bundle/MatchTag"]
-	path = home/.vim/bundle/MatchTag
+	path = home/.janus/MatchTag
 	url = https://github.com/gregsexton/MatchTag.git
 [submodule "home/.vim/bundle/yankring"]
-	path = home/.vim/bundle/yankring
+	path = home/.janus/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
 
 [submodule "home/.vim/bundle/largefile"]
-	path = home/.vim/bundle/largefile
+	path = home/.janus/largefile
 	url = git://github.com/vim-scripts/LargeFile.git
 [submodule "home/.vim/bundle/abolish"]
-	path = home/.vim/bundle/abolish
+	path = home/.janus/abolish
 	url = https://github.com/tpope/vim-abolish.git
 [submodule "home/.vim/bundle/airline"]
-	path = home/.vim/bundle/airline
+	path = home/.janus/airline
 	url = https://github.com/bling/vim-airline.git
 [submodule "home/.vim/bundle/jellybeans"]
-	path = home/.vim/bundle/jellybeans
+	path = home/.janus/jellybeans
 	url = https://github.com/nanotech/jellybeans.vim.git
 [submodule "home/.vim/bundle/ctrlp"]
-	path = home/.vim/bundle/ctrlp
+	path = home/.janus/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
 [submodule "home/.vim/bundle/sensible"]
-	path = home/.vim/bundle/sensible
+	path = home/.janus/sensible
 	url = https://github.com/tpope/vim-sensible.git
