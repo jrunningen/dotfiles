@@ -1,6 +1,3 @@
-" When the host doesn't have ~/.vim in the runtime path, plugins break.
-set rtp+=$HOME/.vim
-
 " Ultisnips doesn't work for Vim Python < 2.6
 python << endpython
 import vim, sys
