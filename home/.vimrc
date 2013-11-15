@@ -22,10 +22,10 @@ endif
 call pathogen#infect()
 
 " Temporary files
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
+set backupdir=~/.vimtmp/backups
+set directory=~/.vimtmp/swaps
 if exists("&undodir")
-  set undodir=~/.vim/undo
+  set undodir=~/.vimtmp/undo
 endif
 
 let g:airline_left_sep=''
