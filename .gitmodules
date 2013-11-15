@@ -55,6 +55,6 @@
 [submodule "home/.vim/bundle/sensible"]
 	path = home/.janus/sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule "home/.vim"]
+[submodule "home/janus"]
 	path = home/.vim
 	url = https://github.com/carlhuda/janus.git
