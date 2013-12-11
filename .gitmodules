@@ -27,9 +27,6 @@
 [submodule "home/.vim/bundle/indexed-search"]
 	path = home/.janus/indexed-search
 	url = https://github.com/vim-scripts/IndexedSearch.git
-[submodule "home/.vim/bundle/delimitMate"]
-	path = home/.janus/delimitMate
-	url = https://github.com/vim-scripts/delimitMate.vim.git
 [submodule "home/.vim/bundle/command-t"]
 	path = home/.janus/command-t
 	url = https://github.com/wincent/Command-T.git
