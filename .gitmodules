@@ -55,3 +55,6 @@
 [submodule "home/janus"]
 	path = home/.vim
 	url = https://github.com/carlhuda/janus.git
+[submodule "home/.janus/vinegar"]
+	path = home/.janus/vinegar
+	url = git://github.com/tpope/vim-vinegar.git
