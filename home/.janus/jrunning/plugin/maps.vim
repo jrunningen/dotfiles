@@ -43,3 +43,7 @@ vnoremap <leader>do :diffget<CR> \| :diffupdate<CR>
 nnoremap <leader>e :Errors<CR>
 
 nnoremap <leader>gt :NERDTreeFind<CR>
+
+if janus#is_plugin_enabled("ctrlp")
+  nnoremap <c-\> :CtrlP<CR>
+endif
