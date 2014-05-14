@@ -40,6 +40,7 @@
 	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
 	edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u; }; vim `f`"
 	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u; }; git add `f`"
+	rm-deleted = "!f() { git ls-files --deleted; }; git rm `f`"
 	st = status -sb
 	br = branch -a --no-merge
 	delete-local-merged = "!f() { git branch --merged | command grep -v '^*' | tr -d '\n'; }; git branch -d `f`"
