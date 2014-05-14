@@ -1,0 +1,11 @@
+#!/bin/bash
+
+_git_prompt()
+{
+  local x=$(__git_ps1)
+  if [ -n "${x}" ]; then
+    echo -ne "[\033[1;31m${x# }\033[0m]"
+  fi
+}
+
+PS1="${debian_chroot:+($debian_chroot)}\[\033[1;34m\]\u@\h\[\033[0m\]:\[\033[1;32m\]\w\[\033[0m\]\$(_git_prompt)$ "
