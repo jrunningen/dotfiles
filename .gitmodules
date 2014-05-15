@@ -36,10 +36,6 @@
 [submodule "home/.vim/bundle/MatchTag"]
 	path = home/.janus/MatchTag
 	url = https://github.com/gregsexton/MatchTag.git
-[submodule "home/.vim/bundle/yankring"]
-	path = home/.janus/yankring
-	url = https://github.com/vim-scripts/YankRing.vim.git
-
 [submodule "home/.vim/bundle/largefile"]
 	path = home/.janus/largefile
 	url = git://github.com/vim-scripts/LargeFile.git
@@ -58,3 +54,6 @@
 [submodule "home/.janus/vinegar"]
 	path = home/.janus/vinegar
 	url = git://github.com/tpope/vim-vinegar.git
+[submodule "home/.janus/learnvim"]
+	path = home/.janus/learnvim
+	url = https://github.com/dahu/LearnVim.git

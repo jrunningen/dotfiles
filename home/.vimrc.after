@@ -1,15 +1,3 @@
-" Ultisnips doesn't work for Vim Python < 2.6
-python << endpython
-import vim, sys
-if sys.version_info < (2, 6):
-  vim.command("call add(g:pathogen_disabled, 'ultisnips')")
-endpython
-
-" Vim versions lower than 7.0.167 have a bug that prevents this version of Tagbar from working.
-if v:version < 700 || v:version == 700 && !has("patch167")
-  let g:loaded_tagbar = 1
-endif
-
 " Temporary files
 set backupdir=~/.vimtmp/backups
 set directory=~/.vimtmp/swaps
@@ -48,3 +36,11 @@ au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
 color molokai
 
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
+
+" For editing prose with long lines.
+command! -nargs=0 Prose
+      \ set wrap linebreak nolist textwidth=0
+      \ | execute 'nnoremap k gk'
+      \ | execute 'nnoremap j gj'
+      \ | execute 'vnoremap k gk'
+      \ | execute 'vnoremap j gj'
