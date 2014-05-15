@@ -46,3 +46,5 @@ autocmd BufReadPost fugitive://*
 au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
 
 color molokai
+
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
