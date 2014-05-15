@@ -2,6 +2,7 @@
 
 _git_prompt()
 {
+  type -t __git_ps1 >/dev/null || return
   local x=$(__git_ps1)
   if [ -n "${x}" ]; then
     echo -ne "[\033[1;31m${x# }\033[0m]"
