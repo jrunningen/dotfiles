@@ -44,5 +44,8 @@
 	st = status -sb
 	br = branch -a --no-merge
 	delete-local-merged = "!f() { git branch --merged | command grep -v '^*' | tr -d '\n'; }; git branch -d `f`"
+	ctags = !.git/hooks/ctags
 [push]
 	default = current
+[init]
+	templatedir = ~/.git_template
