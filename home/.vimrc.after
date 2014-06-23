@@ -1,6 +1,6 @@
 " Temporary files
 set backupdir=~/.vimtmp/backups
-set directory=~/.vimtmp/swaps
+set directory=~/.vimtmp/swaps//,.
 if exists("&undodir")
   set undodir=~/.vimtmp/undo
 endif
