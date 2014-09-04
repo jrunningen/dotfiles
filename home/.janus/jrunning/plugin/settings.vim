@@ -23,5 +23,4 @@ set tags=tags;/                     " Search recursively upward for the ctags fi
 set exrc secure                     " Use project-specific .vimrc files.
 set background=dark                 " I use a dark background most of the time.
 set linebreak                       " Wrap text at word boundaries.
-set textwidth=80                    " Wrap text at 80 characters.
 set magic                           " Fewer backslashes in my regexes.
