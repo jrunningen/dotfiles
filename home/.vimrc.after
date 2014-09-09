@@ -22,7 +22,7 @@ augroup VimStartup
 augroup end
 
 " From http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
-" Delete fugitive buffers when we leave them - otherwise the buffer list gets poluted.
+" Delete fugitive buffers when we leave them - otherwise the buffer list gets polluted.
 autocmd BufReadPost fugitive://* set bufhidden=delete
 " View the parent tree with ..
 autocmd BufReadPost fugitive://*
