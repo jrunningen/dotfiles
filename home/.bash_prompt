@@ -22,7 +22,7 @@ longprompt()
 
 shortprompt()
 {
-  PS1="$ "
+  PS1="\[\033[1;32m\]\W\[\033[0m\]$ "
 }
 
 longprompt
