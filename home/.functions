@@ -50,3 +50,10 @@ function unidecode() {
 function make-debug() {
 	make "$@" -p -n 2>&1 | less
 }
+
+# Get my public IP
+function publicip()
+{
+  curl http://ipecho.net/plain
+  echo
+}
