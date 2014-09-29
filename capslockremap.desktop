@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Capslock remap to ctrl
+Exec=setxkbmap -option caps:ctrl_modifier
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
