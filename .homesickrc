@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
 autostart_dir = File.expand_path('~/.config/autostart')
-mkpath(autostart_dir)
+FileUtils.mkpath(autostart_dir)
 FileUtils.copy 'capslockremap.desktop', autostart_dir
