@@ -54,6 +54,5 @@ function make-debug() {
 # Get my public IP
 function publicip()
 {
-  curl http://ipecho.net/plain
-  echo
+  curl icanhazip.com
 }
