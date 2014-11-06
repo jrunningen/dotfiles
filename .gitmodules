@@ -27,9 +27,6 @@
 [submodule "home/.vim/bundle/ultisnips"]
 	path = home/.janus/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
-[submodule "home/.vim/bundle/MatchTag"]
-	path = home/.janus/MatchTag
-	url = https://github.com/gregsexton/MatchTag.git
 [submodule "home/.vim/bundle/largefile"]
 	path = home/.janus/largefile
 	url = git://github.com/vim-scripts/LargeFile.git
