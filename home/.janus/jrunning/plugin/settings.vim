@@ -5,7 +5,6 @@ set wildignore=*.o,*.obj,*~         " Stuff to ignore when tab completing
 set esckeys                         " Allow cursor keys in insert mode
 set ttyfast                         " Optimize for fast terminal connections
 set encoding=utf-8 nobomb           " Use UTF-8 without BOM
-set cursorline                      " Highlight current line
 set hlsearch                        " Highlight searches by default
 set ignorecase smartcase            " Ignore case of lower-case searches
 set mouse=a                         " Enable mouse in all modes
