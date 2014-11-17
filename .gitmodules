@@ -10,11 +10,6 @@
 [submodule "home/.vim/bundle/vim-indent-guides"]
 	path = home/.janus/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "home/.vim/bundle/obsession"]
-	path = home/.janus/obsession
-	url = git://github.com/tpope/vim-obsession.git
-
-# Submodules used by https://github.com/scrooloose/vimfiles
 [submodule "home/.vim/bundle/ragtag"]
 	path = home/.janus/ragtag
 	url = https://github.com/tpope/vim-ragtag.git
