@@ -1,16 +1,5 @@
 let mapleader=","
 
-" Ultisnips doesn't work for Vim Python < 2.6
-if has("python")
-python << endpython
-import vim, sys
-if sys.version_info < (2, 6):
-  vim.command("call janus#disable_plugin('ultisnips')")
-endpython
-else
-  call janus#disable_plugin('ultisnips')
-endif
-
 " Vim versions lower than 7.0.167 have a bug that prevents this version of Tagbar from working.
 if v:version < 700 || v:version == 700 && !has("patch167")
   let g:loaded_tagbar = 1
