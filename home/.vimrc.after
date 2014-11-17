@@ -33,8 +33,6 @@ autocmd BufReadPost fugitive://*
 " Enable spellcheck for git commit messages
 au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
 
-color molokai
-
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 " For editing prose with long lines.
@@ -44,3 +42,10 @@ command! -nargs=0 Prose
       \ | execute 'nnoremap j gj'
       \ | execute 'vnoremap k gk'
       \ | execute 'vnoremap j gj'
+
+" I like the molokai colorscheme, but jellybeans has better vimdiff
+" highlighting, so here's the highlight groups from jellybeans for diffs.
+hi DiffAdd term=bold ctermfg=193 ctermbg=22 guifg=#D2EBBE guibg=#437019
+hi DiffDelete term=bold ctermfg=16 ctermbg=52 guifg=#40000A guibg=#700009
+hi DiffChange term=bold ctermbg=24 guibg=#2B5B77
+hi DiffText term=reverse cterm=reverse ctermfg=81 ctermbg=16 gui=reverse guifg=#8fbfdc guibg=#000000

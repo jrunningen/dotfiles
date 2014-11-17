@@ -7,14 +7,6 @@
 [submodule "home/.oh-my-zsh"]
 	path = home/.oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule "home/.vim/bundle/vim-indent-guides"]
-	path = home/.janus/vim-indent-guides
-	url = git://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "home/.vim/bundle/obsession"]
-	path = home/.janus/obsession
-	url = git://github.com/tpope/vim-obsession.git
-
-# Submodules used by https://github.com/scrooloose/vimfiles
 [submodule "home/.vim/bundle/ragtag"]
 	path = home/.janus/ragtag
 	url = https://github.com/tpope/vim-ragtag.git
@@ -24,9 +16,6 @@
 [submodule "home/.vim/bundle/indexed-search"]
 	path = home/.janus/indexed-search
 	url = https://github.com/vim-scripts/IndexedSearch.git
-[submodule "home/.vim/bundle/ultisnips"]
-	path = home/.janus/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
 [submodule "home/.vim/bundle/largefile"]
 	path = home/.janus/largefile
 	url = git://github.com/vim-scripts/LargeFile.git
