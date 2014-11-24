@@ -43,6 +43,8 @@ command! -nargs=0 Prose
       \ | execute 'vnoremap k gk'
       \ | execute 'vnoremap j gj'
 
+color molokai
+
 " I like the molokai colorscheme, but jellybeans has better vimdiff
 " highlighting, so here's the highlight groups from jellybeans for diffs.
 hi DiffAdd term=bold ctermfg=193 ctermbg=22 guifg=#D2EBBE guibg=#437019

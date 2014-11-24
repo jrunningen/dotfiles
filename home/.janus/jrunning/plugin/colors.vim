@@ -1,7 +1,3 @@
-syntax on
-
-color molokai
-
 " The Jellybeans colorscheme uses a different background with SpecialKey.
 " With my listchar settings, this produces highlighted tabs, which looks weird.
 " So clear the SpecialKey setting.
