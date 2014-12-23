@@ -4,9 +4,6 @@
 [submodule "home/.vim/bundle/vim-commentary"]
 	path = home/.janus/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
-[submodule "home/.oh-my-zsh"]
-	path = home/.oh-my-zsh
-	url = git://github.com/robbyrussell/oh-my-zsh.git
 [submodule "home/.vim/bundle/ragtag"]
 	path = home/.janus/ragtag
 	url = https://github.com/tpope/vim-ragtag.git
