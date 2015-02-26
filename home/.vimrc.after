@@ -51,3 +51,6 @@ hi DiffAdd term=bold ctermfg=193 ctermbg=22 guifg=#D2EBBE guibg=#437019
 hi DiffDelete term=bold ctermfg=16 ctermbg=52 guifg=#40000A guibg=#700009
 hi DiffChange term=bold ctermbg=24 guibg=#2B5B77
 hi DiffText term=reverse cterm=reverse ctermfg=81 ctermbg=16 gui=reverse guifg=#8fbfdc guibg=#000000
+
+" Use a soft gray for the colorcolumn at 80 characters
+highlight ColorColumn ctermbg=235
