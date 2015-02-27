@@ -53,4 +53,4 @@ hi DiffChange term=bold ctermbg=24 guibg=#2B5B77
 hi DiffText term=reverse cterm=reverse ctermfg=81 ctermbg=16 gui=reverse guifg=#8fbfdc guibg=#000000
 
 " Use a soft gray for the colorcolumn at 80 characters
-highlight ColorColumn ctermbg=235
+highlight ColorColumn ctermbg=232
