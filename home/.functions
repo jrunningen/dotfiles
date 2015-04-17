@@ -56,3 +56,14 @@ function publicip()
 {
   curl api.ipify.org
 }
+
+# Compare the fields in PDFs with pdftk
+function pdfdump()
+{
+  pdftk "$1" dump_data_fields
+}
+
+function pdfdiff()
+{
+  diff <(pdfdump "$1" | sort -u) <(pdfdump "$2" | sort -u)
+}
