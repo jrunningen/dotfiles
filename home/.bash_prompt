@@ -20,9 +20,15 @@ longprompt()
   PS1="${debian_chroot:+($debian_chroot)}\[\033[1;34m\]\u@\h\[\033[0m\]:\[\033[1;32m\]\w\[\033[0m\]$ "
 }
 
+newlineprompt()
+{
+  longprompt
+  PS1="${PS1%\$ }\n$ "
+}
+
 shortprompt()
 {
   PS1="\[\033[1;32m\]\W\[\033[0m\]$ "
 }
 
-longprompt
+newlineprompt
