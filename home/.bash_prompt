@@ -31,4 +31,9 @@ shortprompt()
   PS1="\[\033[1;32m\]\W\[\033[0m\]$ "
 }
 
+minprompt()
+{
+  PS1="$ "
+}
+
 newlineprompt
