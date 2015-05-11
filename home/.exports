@@ -23,3 +23,6 @@ export LANG="en_US"
 
 # tmux needs to use a screen term variant to work properly
 [ -n "$TMUX" ] && export TERM=screen-256color
+
+export GOPATH=~/code/go
+PATH=$PATH:$GOPATH/bin
