@@ -34,3 +34,6 @@
 [submodule "home/.janus/learnvim"]
 	path = home/.janus/learnvim
 	url = https://github.com/dahu/LearnVim.git
+[submodule "home/.janus/YouCompleteMe"]
+	path = home/.janus/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git

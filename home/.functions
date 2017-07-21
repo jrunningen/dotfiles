@@ -49,9 +49,15 @@ function publicip()
 }
 
 # Compare the fields in PDFs with pdftk
-function pdfdump()
+function pdfdumpfields()
 {
   pdftk "$1" dump_data_fields
+}
+
+# Compare the fields in PDFs with pdftk
+function pdfdump()
+{
+  pdftk "$1" dump_data
 }
 
 function pdfdiff()
