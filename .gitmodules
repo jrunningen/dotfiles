@@ -1,39 +1,6 @@
-[submodule "home/.vim/bundle/tabular"]
-	path = home/.janus/tabular
-	url = git://github.com/godlygeek/tabular.git
-[submodule "home/.vim/bundle/vim-commentary"]
-	path = home/.janus/vim-commentary
-	url = git://github.com/tpope/vim-commentary.git
-[submodule "home/.vim/bundle/ragtag"]
-	path = home/.janus/ragtag
-	url = https://github.com/tpope/vim-ragtag.git
 [submodule "home/.vim/bundle/a"]
 	path = home/.janus/a
 	url = https://github.com/vim-scripts/a.vim.git
-[submodule "home/.vim/bundle/indexed-search"]
-	path = home/.janus/indexed-search
-	url = https://github.com/vim-scripts/IndexedSearch.git
-[submodule "home/.vim/bundle/largefile"]
-	path = home/.janus/largefile
-	url = git://github.com/vim-scripts/LargeFile.git
-[submodule "home/.vim/bundle/abolish"]
-	path = home/.janus/abolish
-	url = https://github.com/tpope/vim-abolish.git
-[submodule "home/.vim/bundle/airline"]
-	path = home/.janus/airline
-	url = https://github.com/bling/vim-airline.git
-[submodule "home/.vim/bundle/sensible"]
-	path = home/.janus/sensible
-	url = https://github.com/tpope/vim-sensible.git
-[submodule "home/janus"]
-	path = home/.vim
-	url = https://github.com/carlhuda/janus.git
-[submodule "home/.janus/vinegar"]
-	path = home/.janus/vinegar
-	url = git://github.com/tpope/vim-vinegar.git
-[submodule "home/.janus/learnvim"]
-	path = home/.janus/learnvim
-	url = https://github.com/dahu/LearnVim.git
-[submodule "home/.janus/YouCompleteMe"]
-	path = home/.janus/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "home/.vim/vim-plug"]
+	path = home/.vim/vim-plug
+	url = https://github.com/junegunn/vim-plug.git
