@@ -44,9 +44,6 @@ type hd > /dev/null 2>&1 || alias hd="hexdump -C"
 # OS X has no `md5sum`, so use `md5` as a fallback
 type md5sum > /dev/null 2>&1 || alias md5sum="md5"
 
-# Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
-
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
@@ -112,3 +109,39 @@ alias jerbs="jobs"
 
 # Multithreaded make.
 alias mm="make -j10"
+
+# SSH, but force password authentication
+alias ssh-force-password="ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no"
+
+# Update SSH_AUTH_SOCK in tmux
+# https://chrisdown.name/2013/08/02/fixing-stale-ssh-sockets-in-tmux.html
+update_auth_sock() {
+    local socket_path="$(tmux show-environment | sed -n 's/^SSH_AUTH_SOCK=//p')"
+
+    if ! [[ "$socket_path" ]]; then
+        echo 'no socket path' >&2
+        return 1
+    else
+        export SSH_AUTH_SOCK="$socket_path"
+    fi
+}
+
+alias tls="tmux ls"
+
+alias cert-print="awk -v cmd='openssl x509 -subject' ' /BEGIN/{close(cmd)};{print | cmd}'"
+
+unixdate() {
+  date --date="@${1}"
+}
+
+window-to-pid() {
+  xprop _NET_WM_PID | sed 's/_NET_WM_PID(CARDINAL) = //' | ps `cat`
+}
+
+rpmextract() {
+  rpm2cpio $1 | cpio -idmv
+}
+
+nsping() {
+  nc -vz $1 22
+}
