@@ -51,5 +51,9 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11'
 let g:ctrlp_switch_buffer = '0'
 let g:ctrlp_working_path_mode = '0'
 
+" Hide uninteresting statusline information.
+let g:airline#extensions#tagbar#enabled = 0
+let g:airline_section_y=''
+
 " Filetype settings.
 autocmd FileType go setlocal tabstop=2
