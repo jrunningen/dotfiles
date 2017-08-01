@@ -28,3 +28,28 @@ set colorcolumn=+1                  " Highlight at textwidth (should be 80)
 set number
 set smartindent
 set ruler
+
+" Temporary files
+set backupdir=~/.vimtmp/backups
+set directory=~/.vimtmp/swaps//,.
+if exists("&undodir")
+  set undodir=~/.vimtmp/undo
+endif
+
+" Plugin configuration:
+let g:UltiSnipsExpandTrigger = "<c-j>"
+let g:UltiSnipsJumpForwardTrigger = "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
+
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_alt_sep = ''
+
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
+
+let g:ctrlp_switch_buffer = '0'
+let g:ctrlp_working_path_mode = '0'
+
+" Filetype settings.
+autocmd FileType go setlocal tabstop=2
