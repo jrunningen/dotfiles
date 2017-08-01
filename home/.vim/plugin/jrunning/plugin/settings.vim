@@ -56,4 +56,4 @@ let g:airline#extensions#tagbar#enabled = 0
 let g:airline_section_y=''
 
 " Filetype settings.
-autocmd FileType go setlocal tabstop=2
+autocmd FileType go setlocal tabstop=2 shiftwidth=2
