@@ -22,5 +22,9 @@ set tags=tags;/                     " Search recursively upward for the ctags fi
 set exrc secure                     " Use project-specific .vimrc files.
 set background=dark                 " I use a dark background most of the time.
 set linebreak                       " Wrap text at word boundaries.
+set nowrap                          " ... but only if I explicitly turn wrapping on.
 set magic                           " Fewer backslashes in my regexes.
 set colorcolumn=+1                  " Highlight at textwidth (should be 80)
+set number
+set smartindent
+set ruler
