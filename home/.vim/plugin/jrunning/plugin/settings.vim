@@ -55,5 +55,7 @@ let g:ctrlp_working_path_mode = '0'
 let g:airline#extensions#tagbar#enabled = 0
 let g:airline_section_y=''
 
+let NERDTreeHijackNetrw=0
+
 " Filetype settings.
 autocmd FileType go setlocal tabstop=2 shiftwidth=2
