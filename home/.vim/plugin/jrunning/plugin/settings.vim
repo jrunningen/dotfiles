@@ -1,5 +1,5 @@
 set nocompatible                    " Make vim more useful
-set list listchars=tab:\ \ ,trail:⋅ " Display trailing spaces
+set list listchars=tab:\ \ ,trail:• " Display trailing spaces
 set wildmode=list:longest           " Make cmdline tab completion similar to bash
 set wildignore=*.o,*.obj,*~         " Stuff to ignore when tab completing
 set esckeys                         " Allow cursor keys in insert mode
