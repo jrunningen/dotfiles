@@ -58,4 +58,5 @@ let g:airline#extensions#tagbar#enabled = 0
 let g:airline_section_y=''
 
 let NERDTreeHijackNetrw=0
+let g:ycm_autoclose_preview_window_after_insertion=1
 
