@@ -43,3 +43,5 @@ vnoremap <leader>do :diffget<CR> \| :diffupdate<CR>
 nnoremap <leader>e :Errors<CR>
 nnoremap <leader>gt :NERDTreeFind<CR>
 nnoremap <c-\> :CtrlP<CR>
+
+nnoremap <leader>gf :GoImports<CR> \| :GoBuild<CR>

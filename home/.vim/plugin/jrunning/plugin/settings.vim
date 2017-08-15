@@ -28,6 +28,8 @@ set colorcolumn=+1                  " Highlight at textwidth (should be 80)
 set number
 set smartindent
 set ruler
+set tabstop=2
+set shiftwidth=2
 
 " Temporary files
 set backupdir=~/.vimtmp/backups
@@ -56,6 +58,5 @@ let g:airline#extensions#tagbar#enabled = 0
 let g:airline_section_y=''
 
 let NERDTreeHijackNetrw=0
+let g:ycm_autoclose_preview_window_after_insertion=1
 
-" Filetype settings.
-autocmd FileType go setlocal tabstop=2 shiftwidth=2

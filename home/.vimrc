@@ -2,6 +2,13 @@ let mapleader=","
 
 set nocompatible
 
+" Source work .vimrc, if it exists.
+let work_vimrc = expand('~/.vimrc.work')
+if filereadable(work_vimrc)
+  exec "source " . work_vimrc
+  let loaded_vimrc_work = 1
+endif
+
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
@@ -9,7 +16,6 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'SirVer/ultisnips'
 Plug 'ap/vim-css-color'
 Plug 'bling/vim-airline'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dahu/LearnVim'
 Plug 'elzr/vim-json'
@@ -44,11 +50,9 @@ Plug 'vim-scripts/a.vim'
 Plug 'vim-scripts/argtextobj.vim'
 Plug 'vim-syntastic/syntastic'
 
+if !exists("loaded_vimrc_work")
+	Plug 'Valloric/YouCompleteMe'
+endif
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
-
-" Source work .vimrc, if it exists.
-let work_vimrc = expand('~/.vimrc.work')
-if filereadable(work_vimrc)
-  exec "source " . work_vimrc
-endif
