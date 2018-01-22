@@ -10,7 +10,6 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 Plug 'Lokaltog/vim-easymotion'
-Plug 'SirVer/ultisnips'
 Plug 'ap/vim-css-color'
 Plug 'bling/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
