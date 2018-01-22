@@ -4,4 +4,4 @@ New-Item -ItemType SymbolicLink -Path $profile -Target "$PSScriptRoot\Microsoft.
 
 # Put in a sensible vimrc, and link the runfiles directory to ~/vimfiles.
 New-Item -ItemType SymbolicLink -Path "$HOME/_vimrc" -Target "$PSScriptRoot\_vimrc" -Force
-New-Item -type Junction -Path "$HOME/vimfiles" -Value "$PSScriptRoot\..\home\.vim" -Force
+New-Item -ItemType SymbolicLink -Path "$HOME/vimfiles" -Target "$PSScriptRoot\..\home\.vim" -Force
