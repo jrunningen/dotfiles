@@ -1,4 +1,8 @@
-color molokai
+if has('windows')
+	color industry " molokai looks awful in terminal Vim in the Windows console.
+else
+	color molokai
+endif
 
 function s:ColorTweaks()
   " Dark, subtle cursorcolumn.
