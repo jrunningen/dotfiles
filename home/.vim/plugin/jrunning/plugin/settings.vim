@@ -31,11 +31,17 @@ set ruler
 set tabstop=2
 set shiftwidth=2
 
-" Temporary files
-set backupdir=~/.vimtmp/backups
-set directory=~/.vimtmp/swaps//,.
-if exists("&undodir")
-  set undodir=~/.vimtmp/undo
+" Temporary files shouldn't be created in the same place as the file.
+if has('windows')
+	set backupdir=$TEMP
+	set directory=$TEMP
+	set undodir=$TEMP
+else
+	set backupdir=~/.vimtmp/backups
+	set directory=~/.vimtmp/swaps//,.
+	if exists("&undodir")
+		set undodir=~/.vimtmp/undo
+	endif
 endif
 
 " Plugin configuration:
