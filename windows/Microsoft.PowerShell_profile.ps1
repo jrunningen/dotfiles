@@ -1,6 +1,7 @@
 Import-Module PSReadLine
 
 Set-PSReadLineOption -EditMode Vi
+Set-PSReadLineOption -BellStyle None
 
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
