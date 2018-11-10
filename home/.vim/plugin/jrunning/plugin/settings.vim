@@ -32,7 +32,7 @@ set tabstop=2
 set shiftwidth=2
 
 " Temporary files shouldn't be created in the same place as the file.
-if has('windows')
+if has('win32')
 	set backupdir=$TEMP
 	set directory=$TEMP
 	set undodir=$TEMP
