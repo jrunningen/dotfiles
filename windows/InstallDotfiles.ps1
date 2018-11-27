@@ -1,7 +1,12 @@
-# Overwrite the current PowerShell profile, and hardlink that path to the
-# profile in this repo.
-New-Item -ItemType SymbolicLink -Path $profile -Target "$PSScriptRoot\Microsoft.PowerShell_profile.ps1" -Force
+# This script requires Administrator privileges, because it creates symlinks.
 
-# Put in a sensible vimrc, and link the runfiles directory to ~/vimfiles.
-New-Item -ItemType SymbolicLink -Path "$HOME/_vimrc" -Target "$PSScriptRoot\_vimrc" -Force
+Function Install-Dotfile($filename)
+{
+	New-Item -ItemType SymbolicLink -Force -Path "$HOME/$filename" -Target "$PSScriptRoot\$filename"
+}
+
+New-Item -ItemType SymbolicLink -Path $profile -Target "$PSScriptRoot\Microsoft.PowerShell_profile.ps1" -Force
 New-Item -ItemType SymbolicLink -Path "$HOME/vimfiles" -Target "$PSScriptRoot\..\home\.vim" -Force
+
+Install-Dotfile("_vimrc")
+Install-Dotfile(".gitconfig")
