@@ -1,0 +1,27 @@
+[user]
+	name = Jeff Runningen
+	email = jeffrunningen@gmail.com
+[filter "lfs"]
+	process = git-lfs filter-process
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+[credential "https://source.developers.google.com"]
+	useHttpPath = true
+	helper = gcloud.cmd
+[core]
+	editor = vim.bat
+[foo]
+	bar = baz
+[alias]
+	df = diff -w
+	bl = blame -w
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	la = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+	edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u; }; vim `f`"
+	add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u; }; git add `f`"
+	rm-deleted = "!f() { git ls-files --deleted; }; git rm `f`"
+	st = status -sb
+	br = branch -a --no-merge
+	delete-local-merged = "!f() { git branch --merged | command grep -v '^*' | tr -d '\n'; }; git branch -d `f`"
+	ctags = !.git/hooks/ctags
