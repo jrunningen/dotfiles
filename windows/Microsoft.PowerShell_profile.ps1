@@ -16,6 +16,7 @@ Set-PSReadlineKeyHandler -Key Ctrl+w -Function UnixWordRubout
 Set-PSReadlineKeyHandler -Key Ctrl+[ -Function ViCommandMode
 
 Set-Alias vi vim
+Set-Alias which Get-Command
 
 # The following function is respectfully borrowed from 
 # https://github.com/lzybkr/PSReadLine/blob/master/PSReadLine/SamplePSReadLineProfile.ps1
