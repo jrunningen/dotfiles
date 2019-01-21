@@ -18,4 +18,11 @@ complete -W "NSGlobalDomain" defaults
 # Use vi shortcuts on the command line.
 set -o vi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Load RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jrunning/google-cloud-sdk/path.bash.inc' ]; then source '/Users/jrunning/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jrunning/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/jrunning/google-cloud-sdk/completion.bash.inc'; fi
