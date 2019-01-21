@@ -1,4 +1,4 @@
-if has('windows')
+if has('win32')
 	color industry " molokai looks awful in terminal Vim in the Windows console.
 else
 	color molokai
