@@ -52,3 +52,5 @@
 	templatedir = ~/.git_template
 [diff]
 	tool = vimdiff
+[credential "https://source.developers.google.com"]
+	helper = gcloud.sh
