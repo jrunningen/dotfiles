@@ -10,7 +10,7 @@ set ignorecase smartcase            " Ignore case of lower-case searches
 set mouse=a                         " Enable mouse in all modes
 set ttymouse=xterm2
 set t_Co=256                        " Tell the term has 256 colors
-set noerrorbells                    " Disable error bells
+set belloff=all                     " Disable all bells
 set nostartofline                   " Don’t reset cursor to start of line when moving around.
 set shortmess=atIo                  " Don’t show the intro message when starting vim
 set showmode                        " Show the current mode
